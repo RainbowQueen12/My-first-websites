@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Welcome everyone to Giana's Survey Form. You are going to rate all my websites.</p>
+    
+    <form id="survey-form">
+        <!-- Name Field -->
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        
+        <!-- Email Field -->
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        
+        <!-- Age Field -->
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" min="1" max="110" placeholder="Enter your age" style="width: 100%; max-width: 300px; padding: 10px;">
+        
+        <!-- Dropdown Field -->
+        <label for="dropdown">Which website did you like best?</label>
+        <select id="dropdown" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="CatPhotoWebsite">Cat Photo Website</option>
+            <option value="blog">Mr Whiskers Blog</option>
+            <option value="Party">Party Events</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <p>Would you recommend my websites to a friend?</p>
+        <label for="recommend-yes">
+            <input type="radio" id="recommend-yes" name="recommend" value="yes" checked> Yes
+        </label>
+        <label for="recommend-no">
+            <input type="radio" id="recommend-no" name="recommend" value="no"> No
+        </label>
+
+        <!-- Checkboxes (Descendants of #survey-form) -->
+        <p>What features did you like? (Select all that apply)</p>
+        <label for="feat-design">
+            <input type="checkbox" id="feat-design" name="features" value="design"> Visual Design
+        </label>
+        <label for="feat-speed">
+            <input type="checkbox" id="feat-speed" name="features" value="speed"> Loading Speed
+        </label>
+        <label for="feat-content">
+            <input type="checkbox" id="feat-content" name="features" value="content"> Content
+        </label>
+       <p><label for="comments">Any additional comments or suggestions?</label></p>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your feedback here..."></textarea> 
+        <!-- Submit Button -->
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
