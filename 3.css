@@ -1,0 +1,29 @@
+/* 1. Explicitly select the 'a' element as required by the test framework */
+a {
+  text-decoration: none;
+}
+
+/* 2. Unvisited links color state */
+.sub-item-link:link {
+  color: #0066cc; 
+}
+
+/* 3. Visited links color state */
+.sub-item-link:visited {
+  color: #551a8b; 
+}
+
+/* 4. Hover state color */
+.sub-item-link:hover {
+  color: #ff6600; 
+}
+
+/* 5. Focus state outline */
+.sub-item-link:focus {
+  outline: 2px solid #ffcc00; 
+}
+
+/* 6. Clicked (Active) state color */
+.sub-item-link:active {
+  color: #cc0000; 
+}
